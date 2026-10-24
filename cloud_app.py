@@ -1,10 +1,23 @@
-"""Streamlit Community Cloud entrypoint: trains a trusted local artifact if missing."""
+
+"""Streamlit Cloud entrypoint: prepare public data and train model."""
+
 from pathlib import Path
 import runpy
+
+from prepare_real_data import prepare
 from src.pipeline import train, ROOT
 
-if not (ROOT / 'models/sentiment_model.joblib').exists() or not (ROOT / 'reports/metrics.json').exists():
-    public = ROOT / 'data/raw/amazon_reviews.csv'
-    source = public if public.exists() else ROOT / 'data/raw/demo_reviews.csv'
-    train(source)
-runpy.run_path(str(ROOT / 'app.py'), run_name='__main__')
+model_path = ROOT / "models" / "sentiment_model.joblib"
+metrics_path = ROOT / "reports" / "metrics.json"
+data_path = ROOT / "data" / "raw" / "amazon_reviews.csv"
+
+# Download the public Amazon review dataset if missing.
+if not data_path.exists():
+    prepare()
+
+# Train when model or metrics are missing.
+if not model_path.exists() or not metrics_path.exists():
+    train(data_path)
+
+# Launch the Streamlit dashboard.
+runpy.run_path(str(ROOT / "app.py"), run_name="__main__")
