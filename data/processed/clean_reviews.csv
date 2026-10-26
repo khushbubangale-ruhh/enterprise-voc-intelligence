@@ -1,0 +1,31 @@
+review_id,review_text,sentiment,category,review_date
+DEMO-001,The app is fast and easy to navigate,positive,Payments,2026-01-15
+DEMO-002,Customer support resolved my issue quickly,positive,Login,2026-02-15
+DEMO-003,Payment completed smoothly and the receipt arrived,positive,Support,2026-03-15
+DEMO-004,Login works reliably after the update,positive,Delivery,2026-04-15
+DEMO-005,Delivery was earlier than expected,positive,Interface,2026-05-15
+DEMO-006,The new interface is clear and intuitive,positive,Performance,2026-06-15
+DEMO-007,I appreciate the helpful support team,positive,Payments,2026-07-15
+DEMO-008,Performance is stable on my phone,positive,Login,2026-08-15
+DEMO-009,Refund was processed without any trouble,positive,Support,2026-09-15
+DEMO-010,Notifications are timely and useful,positive,Delivery,2026-01-15
+DEMO-011,Payment failed twice and my money is still pending,negative,Payments,2026-01-15
+DEMO-012,The app crashes when I open the settings page,negative,Login,2026-02-15
+DEMO-013,Support did not reply to my complaint,negative,Support,2026-03-15
+DEMO-014,I cannot log in after the latest update,negative,Delivery,2026-04-15
+DEMO-015,Delivery was late and tracking did not update,negative,Interface,2026-05-15
+DEMO-016,The interface is confusing and hard to use,negative,Performance,2026-06-15
+DEMO-017,Refund has not arrived after several days,negative,Payments,2026-07-15
+DEMO-018,Pages load very slowly during checkout,negative,Login,2026-08-15
+DEMO-019,The app freezes whenever I search,negative,Support,2026-09-15
+DEMO-020,The password reset link never works,negative,Delivery,2026-01-15
+DEMO-021,I updated the application yesterday,neutral,Payments,2026-01-15
+DEMO-022,The package arrived on Tuesday,neutral,Login,2026-02-15
+DEMO-023,I contacted support to ask about the policy,neutral,Support,2026-03-15
+DEMO-024,The login screen has a new design,neutral,Delivery,2026-04-15
+DEMO-025,The app now includes a payment history page,neutral,Interface,2026-05-15
+DEMO-026,I received a notification about delivery,neutral,Performance,2026-06-15
+DEMO-027,My order is currently being processed,neutral,Payments,2026-07-15
+DEMO-028,The interface has three main tabs,neutral,Login,2026-08-15
+DEMO-029,The next update is scheduled for Friday,neutral,Support,2026-09-15
+DEMO-030,I opened the application this morning,neutral,Delivery,2026-01-15
